@@ -27,7 +27,7 @@
     var timeAgo, origDate;
     origDate = new Date($(elm).text());
     timeAgo = $.timeago(origDate)
-    $(elm).text(timeAgo);
+    $(elm).text(timeAgo.replace(' ago', ''));
   })
 
   var $form = $('#mc-embedded-subscribe-form')
